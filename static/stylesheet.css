@@ -1,0 +1,99 @@
+
+ 
+@keyframes text {
+    0%   {color: #ad27ad; left:0px; top:0px;}
+    25%  {color: #26A9E0; left:200px; top:0px;}
+    50%  {color:#82f057; left:200px; top:200px;}
+    75%  {color: #e3f057; left:0px; top:200px;}
+    100% {color: #ad27ad; left:0px; top:0px;}
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./deva-williamson-ymy-t_sKkNk-unsplash.jpg');
+    background-size: cover;
+}
+
+h1{
+    font-size:30px;
+    background-color: white;
+    width: 80vw;
+    border: 15px solid #ad27ad;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: #ad27ad;
+}
+
+h3 {
+    text-decoration: underline;
+    color: #ad27ad;
+}
+
+p {
+    font-size: larger;
+    text-align: center;
+}
+
+form {
+    justify-content: center;
+}
+
+h4 {text-align: center;
+
+}
+
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100vw;
+    margin: 200px;
+    display: flex;
+    justify-content:center;
+}
+
+.cupcake-container{
+    display: flex;
+    background-color: white;
+    width: 300px;
+    border: 15px solid #ad27ad;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+}
+
+.cart-btn{
+    font-size: 25px;
+}
+
+#cupcake-order{
+    background-color: white;
+    width: 300px;
+    border: 15px solid #ad27ad;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+    width: 40vw;
+
+}
+
+#home-btn {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}

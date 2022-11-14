@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/stylesheet.css">
+    <title>{{ cupcake["name"] }}</title>
+</head>
+<body>
+    <header>
+        <h1>{{ cupcake["name"] }}</h1>
+    </header>
+    <main>
+        
+        <div class="cupcake-container">
+            <a href="{{ url_for('individual_cupcake', name=cupcake['name']) }}">
+                <h3>{{ cupcake["name"] }}</h3>
+            </a>
+            <h4>Flavor: {{ cupcake["flavor"] }}</h4>
+            <h4>Frosting: {{ cupcake["frosting"] }}</h4>
+            <h4>Price: ${{ cupcake["price"] }}</h4>
+            <a href="{{ url_for('add_cupcake', name=cupcake['name']) }}">
+                <button>Add to Cart</button>
+            </a>
+        </div> 
+
+        <hr>   
+        
+        <a id = "home-btn" href="{{ url_for('home') }}"><h4>Main Page</h4></a>
+    </main>
+</body>
+</html>
